@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram ram saa</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .donatebg {
+            font-size: 20px;
+            border: 1px solid rgb(150, 232, 157);
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 40vh;
+            background-image: url('/static/6.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.8;
+            background-color: #c77171;
+        }
+        .aboutbg {
+            font-size: 20px;
+            border: 1px solid rgb(150, 232, 157);
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 40vh;
+            background-image: url('/static/1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.8;
+            background-color: #c77171;
+        }
+        .indexbg {
+            font-size: 20px;
+            border: 1px solid rgb(150, 232, 157);
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 40vh;
+            background-image: url('/static/4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+            background-color: #c77171;
+        }
+        .contactbg {
+            font-size: 20px;
+            border: 1px solid rgb(150, 232, 157);
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 45vh;
+            background-image: url('/static/7.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.8;
+            background-color: #c77171;}
+
+        .servicesbg{
+            font-size: 20px;
+            border: 1px solid rgb(150, 232, 157);
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 45vh;
+            background-image: url('/static/10.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.8;
+            background-color: #c77171;
+        }
+        .volunteerbg{
+            font-size: 20px;
+            border: 1px solid rgb(150, 232, 157);
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 45vh;
+            background-image: url('/static/13.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.8;
+            background-color: #c77171;
+        }
+
+        .contact1 {
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: auto;
+            padding: 0px 0px;
+        }
+
+     
+        footer {
+
+            margin-top: 5px;
+        }
+
+        #heros {
+            color: black;
+            font-size: 26px;
+        }
+
+        .ourprior {
+            /* border: 5px solid black; */
+            height: 134px;
+            width: 225px;
+            display: block;
+            margin: 0px 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="/static/logo.png" alt="logo" width="65px" height="60px">
+                <span class="ml-3 text-xl">Ram Ram Saa foundation</span>
+            </a>
+            <nav
+                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <!-- <a href="/" class="mr-5 hover:text-gray-900">HOME</a> -->
+                <a href="/about" class="mr-5 hover:text-gray-900">About us</a>
+                <a href="/services" class="mr-5 hover:text-gray-900">What we do</a>
+                <a href="/contact" class="mr-5 hover:text-gray-900">Contact Us</a>
+            </nav>
+            <button
+                class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a
+                    href="/donate" class="mr-5 hover:text-black-900">Donate Us</a>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- navigation -->
+    <!-- body -->
+    {% block body %}{% endblock %}
+    <!-- /// -->
+</div>
+<div class="bg-indigo-900 text-center py-4 lg:px-4">
+    <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+      <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">Hello!!</span>
+      <span class="font-semibold mr-2 text-left flex-auto">You can contact us directly on +91-7877708577 or +91-7222875742</span>
+      <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+    </div>
+  </div>
+</div>
+    <!-- /// -->
+    <!-- body -->
+    <!-- footer here -->
+    <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <!-- image -->
+            </a>
+            <p class="flex title-font font-medium items-center md:justify-start justify-center text-white">©
+                2021 RamRamSaaFoundation —
+                <a href="https://instagram.com/RamRAMSaaFoundation" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">@RamRamSaaFoundation</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+
+                <a href="https://instagram.com/RamRAMSaaFoundation" class="ml-3 text-white-800">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a href="https://linkdin.com/gauravjanawat" class="ml-3 text-white-800">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+
+    <script>
+        function addstatus() {
+            document.getElementById("cbutton").innerHTML = " <h2> Thanks for your response . Your responses are submitted succesfully . </h2>  ";
+        }
+        </script>
+
+</body>
+
+</html>

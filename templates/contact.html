@@ -1,0 +1,85 @@
+{% extends "overout.html" %}
+{% block body %}
+
+<div class="contactbg">
+    <h1 style="
+    font-size: 40px;margin: 30px;color:   #ffffff;"> <b>Contact US<b> </h1>
+</div>
+<div class="contact1">
+    <section class="text-gray-600 body-font relative">
+        <form name="sentMessage" id="contactForm" action="/contact" method="post" novalidate>
+            <div class="container px-3 py-5 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+                    <hr>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We will not misuse your personal information
+                    </p>
+                    <hr>
+                </div>
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out required" >
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out required" >
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="phone" class="leading-7 text-sm text-gray-600">Contact No.</label>
+                                <input type="phone" id="phone" name="phone"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out required" >
+                                <!-- <textarea id="phone" name="phone"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-10 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                         -->
+
+                            </div>
+                            <div class="p-2 w-full">
+                                <div class="relative">
+                                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                                    <textarea id="message" name="message"
+                                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                </div>
+                            </div>
+                            <div class="p-2 w-full">
+                                <button type="submit" id="cbutton" onclick="addstatus()"
+                                    class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                            </div>
+                            <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                                <a class="text-indigo-500">ramramsaafoundation@gmail.com</a>
+                                <p class="leading-normal my-5">Main market,<br>Thanagazi,Alwar,Raj.(301022)
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form>
+    </section>
+    <!-- //// -->
+    <div class="flex flex-col text-center w-full mb-4  " style=" font-size: 25px;">
+        <b>Your support can help safeguard India’s future</b>
+    </div>
+    <br>
+    <div class=" px-32 font-serif italic">
+        When you make a tax-deductible donation to Ram Ram Saa Foundation, you’re supporting the most effective solutions to
+        the environment’s most pressing challenges. Your contribution is so much more than a donation; it is an investment in
+        the future of our planet.
+    </div>
+
+
+<button
+class="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a
+href="/donate">Donate Now</a></button></div>
+</div>
+
+
+{% endblock %}
