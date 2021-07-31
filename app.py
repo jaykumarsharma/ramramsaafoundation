@@ -75,5 +75,5 @@ def donate():
      db.session.commit()
     return render_template('donate.html')
 
-
-app.run(debug=True)
+if __name__ == '__main__':
+        app.run(debug=True)
