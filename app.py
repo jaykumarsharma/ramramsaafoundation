@@ -39,7 +39,7 @@ def about():
     return render_template('about.html')
 
 
-@app.route("/contact" , methods=['POST'])
+@app.route("/contact" , methods=['GET','POST'])
 def contact():
   if(request.method=='POST'):
      '''Add entry to the database'''
@@ -58,7 +58,7 @@ def services():
     
 
 
-@app.route("/donate" , methods=['POST'])
+@app.route("/donate" , methods=['GET','POST'])
 def donate():
     if(request.method=='POST'):
      '''Add entry to the database'''
