@@ -13,6 +13,10 @@ def home():
 def google():
     return render_template('google194c0ddecb4438cf.html')
 
+@app.route("/sitemap")
+def sitemap():
+    return render_template('sitemap.xml')
+
 @app.route("/about")
 def about():
     return render_template('about.html')
