@@ -9,6 +9,9 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route("/google194c0ddecb4438cf.html")
+def home():
+    return render_template('google194c0ddecb4438cf.html')
 
 @app.route("/about")
 def about():
